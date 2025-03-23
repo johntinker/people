@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Emails</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Add Emails</h1>
+    <form action="process-emails.php" method="POST">
+        <label for="input">Names and Emails:</label><br>
+        <textarea id="input" name="input" rows="10" cols="50" placeholder="John Doe <john@example.com>, Jane Smith <jane@example.com>"></textarea><br><br>
+
+        <label for="source">Source:</label><br>
+        <input type="text" id="source" name="source" placeholder="Enter source"><br><br>
+
+        <label for="db_password">Database Password:</label><br>
+        <input type="password" id="db_password" name="db_password" placeholder="Enter database password"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Link back to the main editing interface -->
+    <div class="footer">
+        <a href="index.php">Back to Editor</a>
+    </div>
+</body>
+</html>
